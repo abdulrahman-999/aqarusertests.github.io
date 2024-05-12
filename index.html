@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>البحث عن عقار</title>
+    <style>
+        .blurring {
+    filter: url(#blur-x); /* Apply the horizontal blur filter defined in the SVG above */
+}
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Use full height of the viewport */
+            margin: 0; /* Remove default margin */
+            background-color: #f4f4f4; /* Light grey background */
+            flex-direction: column; /* Stack elements vertically */
+        }
+        #randomImage {
+            margin-bottom: 20px; /* Space between the image and the button */
+            max-width: 100%; /* Ensures the image is not bigger than the screen */
+            height: auto; /* Maintain aspect ratio */
+        }
+        button {
+            background-color: #007BFF; /* Bootstrap's primary blue */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <img id="randomImage" src="default.jpg" alt="Random Image">
+    <button onclick="pickRandomImage()">اختر سيناريو..</button>
+
+    <script src="script.js"></script>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="height:0;position:absolute;z-index:-1;">
+    <defs>
+        <filter id="blur-x">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="5,0" /> <!-- Blur strength: 5 in X, 0 in Y -->
+        </filter>
+    </defs>
+    </svg>
+
+</body>
+</html>
