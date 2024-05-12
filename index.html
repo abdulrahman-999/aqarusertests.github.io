@@ -25,7 +25,7 @@
             height: auto; /* Maintain aspect ratio */
         }
         button {
-            background-color: #007BFF; /* Bootstrap's primary blue */
+            background-color: #0eba40; /* Bootstrap's primary blue */
             color: white;
             border: none;
             padding: 10px 20px;
@@ -35,15 +35,18 @@
             font-size: 16px;
             border-radius: 5px; /* Rounded corners */
             cursor: pointer;
+            font-weight: bold; /* Make the text bold */
         }
         button:hover {
-            background-color: #0c483e; /* Darker blue on hover */
+            background-color: #ffffff; /* Darker blue on hover */
+            color: #0eba40;
         }
     </style>
 </head>
 <body>
-    <img id="randomImage" src="default.jpg" alt="Random Image">
-    <button onclick="pickRandomImage()">اختر سيناريو..</button>
+    <img id="topImage" src="logo.png" alt="Top Image"> <!-- Add your image here -->
+    <img id="randomImage" src="default.png" alt="Random Image">
+    <button onclick="pickRandomImage()">..اختر سيناريو</button>
 
     <script src="script.js"></script>
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="height:0;position:absolute;z-index:-1;">
