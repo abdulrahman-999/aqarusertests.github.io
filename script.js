@@ -15,7 +15,7 @@ function pickRandomImage() {
     const imgElement = document.getElementById('randomImage');
     let count = 0;
     const maxCount = 20; // Total number of changes, increased for more blur effect duration
-    const intervalTime = 50; // Time in milliseconds between changes, reduced for faster cycling
+    const intervalTime = 10; // Time in milliseconds between changes, reduced for faster cycling
 
     imgElement.classList.add('blurring'); // Apply blur effect
 
